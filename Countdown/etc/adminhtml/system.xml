@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog">
+            <group id="product_countdown" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Countdown</label>
+                <field id="status" translate="label" type="select" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Status</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="countdown_monday" translate="label" type="time" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Monday</label>
+                    <frontend_model>Ctidigital\Countdown\Block\Adminhtml\System\Config\ShortTimeFormat</frontend_model>
+                </field>
+                <field id="countdown_tuesday" translate="label" type="time" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Tuesday</label>
+                    <frontend_model>Ctidigital\Countdown\Block\Adminhtml\System\Config\ShortTimeFormat</frontend_model>
+                </field>
+                <field id="countdown_wednesday" translate="label" type="time" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Wednesday</label>
+                    <frontend_model>Ctidigital\Countdown\Block\Adminhtml\System\Config\ShortTimeFormat</frontend_model>
+                </field>
+                <field id="countdown_thursday" translate="label" type="time" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Thursday</label>
+                    <frontend_model>Ctidigital\Countdown\Block\Adminhtml\System\Config\ShortTimeFormat</frontend_model>
+                </field>
+                <field id="countdown_friday" translate="label" type="time" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Friday</label>
+                    <frontend_model>Ctidigital\Countdown\Block\Adminhtml\System\Config\ShortTimeFormat</frontend_model>
+                </field>
+                <field id="countdown_saturday" translate="label" type="time" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Saturday</label>
+                    <frontend_model>Ctidigital\Countdown\Block\Adminhtml\System\Config\ShortTimeFormat</frontend_model>
+                </field>
+                <field id="countdown_sunday" translate="label" type="time" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Sunday</label>
+                    <frontend_model>Ctidigital\Countdown\Block\Adminhtml\System\Config\ShortTimeFormat</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

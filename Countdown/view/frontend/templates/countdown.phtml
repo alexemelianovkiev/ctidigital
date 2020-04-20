@@ -1,0 +1,26 @@
+<?php
+/** @var \Ctidigital\Countdown\Block\Countdown $block */
+?>
+
+<div id="countdown" data-bind="scope:'countdown'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<?php if ($block->isEnabled()): ?>
+    <script type="text/x-magento-init">
+        {
+            "*": {
+             "Magento_Ui/js/core/app": {
+                "components": {
+                        "countdown": {
+                            "component": "Ctidigital_Countdown/js/view/countdown",
+                            "mapping": <?= $block->getJsonMapping() ?>,
+                            "timezone": "<?= $block->getTimezone(); ?>",
+                            "template": "Ctidigital_Countdown/countdown"
+                        }
+                   }
+                }
+            }
+         }
+    </script>
+<?php endif; ?>
